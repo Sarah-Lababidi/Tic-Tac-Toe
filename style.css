@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Permanent+Marker&display=swap');
-
-body{
-    background: #bedcfa;
+body {
+    background: #f8edeb;
     font-size: 30px;
     font-family: 'Hachi Maru Pop', cursive;
 }
 
-header h1{
+header h1 {
     text-align: center;
-    color: #0d335d;
+    color: #093a3e;
 }
 
-table{
+table {
     margin: auto;
 }
 
 td {
     font-family: 'Permanent Marker', cursive;
-    color: #3a4d63;
+    color: #093a3e;
     text-align: center;
     width: 9rem;
     height: 9rem;
@@ -26,21 +25,21 @@ td {
     cursor: pointer;
 }
 
-tbody tr:nth-of-type(2) td{
+tbody tr:nth-of-type(2) td {
     border-top: 3px solid #000;
     border-bottom: 3px solid #000;
 }
 
-tbody tr td:nth-of-type(2){
+tbody tr td:nth-of-type(2) {
     border-left: 3px solid #000;
     border-right: 3px solid #000;
 }
 
-#main{
+#main {
     position: relative;
 }
 
-#gameover{
+#gameover {
     width: 13rem;
     height: 13rem;
     padding: 0.3em;
@@ -50,15 +49,15 @@ tbody tr td:nth-of-type(2){
     transform: translate(-50%, -30%);
     text-align: center;
     opacity: 0.9;
-    border-radius: 0.3em; 
+    border-radius: 0.3em;
 }
 
-#gameover h1{
+#gameover h1 {
     color: #fff;
     font-size: 2rem;
 }
 
-button#reset{
+button#reset {
     font-family: 'Hachi Maru Pop', cursive;
     font-size: 1.2rem;
     font-weight: 600;
@@ -71,49 +70,42 @@ button#reset{
     transition: transform 0.2s ease;
 }
 
-button#reset:hover{
+button#reset:hover {
     cursor: pointer;
     color: #000;
     font-weight: bold;
     transform: translateY(-5px);
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.show{
+.show {
     display: block;
-    z-index : 2;
+    z-index: 2;
 }
 
-.fadeout{
+.fadeout {
     opacity: 0.6;
     z-index: -1;
     pointer-events: none;
 }
 
-.win{
+.win {
     background: #5aa469;
 }
 
-.lose{
+.lose {
     background: #c05555;
 }
 
-.tie{
+.tie {
     background: #f1a054;
 }
 
-@media(max-width: 568px){
-    body{
+@media(max-width: 568px) {
+    body {
         font-size: 20px;
     }
 }
-
-
-
-
-
-
-

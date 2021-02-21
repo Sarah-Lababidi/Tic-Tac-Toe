@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Permanent+Marker&display=swap');
+
+body{
+    background: #bedcfa;
+    font-size: 30px;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+header h1{
+    text-align: center;
+    color: #0d335d;
+}
+
+table{
+    margin: auto;
+}
+
+td {
+    font-family: 'Permanent Marker', cursive;
+    color: #3a4d63;
+    text-align: center;
+    width: 9rem;
+    height: 9rem;
+    text-align: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+tbody tr:nth-of-type(2) td{
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+tbody tr td:nth-of-type(2){
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+#main{
+    position: relative;
+}
+
+#gameover{
+    width: 13rem;
+    height: 13rem;
+    padding: 0.3em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    opacity: 0.9;
+    border-radius: 0.3em; 
+}
+
+#gameover h1{
+    color: #fff;
+    font-size: 2rem;
+}
+
+button#reset{
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+    padding: 0.3em 0.8em;
+    border-radius: 0.3em;
+    background: #bedbbb;
+    border: none;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+
+button#reset:hover{
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+    z-index : 2;
+}
+
+.fadeout{
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.win{
+    background: #5aa469;
+}
+
+.lose{
+    background: #c05555;
+}
+
+.tie{
+    background: #f1a054;
+}
+
+@media(max-width: 568px){
+    body{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
